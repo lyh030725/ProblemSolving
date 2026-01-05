@@ -1,6 +1,7 @@
-from sys import stdin, stdout
-n, t = map(int,stdin.readline().split())
-arr = list(map(int,stdin.readline().split()))
+import sys
+input = sys.stdin.readline
+n, t = map(int,input().split())
+arr = list(map(int,input().split()))
 
 for i in range(1, t):
   for j in range(i, 0, -1):
@@ -9,4 +10,4 @@ for i in range(1, t):
     else:
       break
 
-stdout.write(' '.join(str(s) for s in arr))
+sys.stdout.write(' '.join(str(s) for s in arr))
