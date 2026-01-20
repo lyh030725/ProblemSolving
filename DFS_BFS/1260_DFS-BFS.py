@@ -1,5 +1,5 @@
 from collections import deque
-
+#n: 정점의 개수 , m: 간선의 개수, start: 시작점
 n, m, start = map(int , input().split())
 
 graph = [[0] * (n+1) for _ in range(n+1)]
